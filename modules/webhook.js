@@ -1,11 +1,9 @@
 const axios = require('axios');
 
-const { webhookurl } = require('./../auth/keys.json');
-
-function sendwebhook(message) {
+function sendwebhook(webhookurl, message) {
     axios.post(webhookurl, { content: message })
         .then(response => {
-            console.log('Message sent successfully:', response.data);
+            console.log(`${response.status}, ${message}`);
         })
         .catch(error => {
             if (error.response) {
