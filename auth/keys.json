@@ -1,0 +1,19 @@
+{
+    "misc": {
+        "webhookurl": "yourwebhookurl",
+        "linktext": "urtext",
+    },
+    "users": [
+        {
+            "accId": 0,
+            "twitterpass": "pass",
+            "twitteruser": "name"
+        },
+
+        {
+            "accId": 1,
+            "twitterpass": "pass",
+            "twitteruser": "name"
+        }
+    ]
+}
